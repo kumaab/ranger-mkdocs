@@ -1,0 +1,59 @@
+site_name: Apache Ranger
+
+theme:
+  name: material
+  logo: assets/asf-logo.png
+  palette:
+    - scheme: default
+      primary: violet
+      accent: violet
+      toggle:
+        icon: material/brightness-7  # ☀️
+        name: Switch to dark mode
+    - scheme: slate
+      primary: purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4  # 🌙
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+
+nav:
+  - Home: home/overview.md
+  - Getting started:
+    - Installation: getting-started/install.md
+  - Architecture:
+    - Overview: arch/architecture.md
+  - Plugins:
+    - Trino: plugins/trino.md
+  - Services:
+    - Ranger Admin: services/admin/service.md
+    - Ranger KMS: services/kms/service.md
+    - Ranger UserSync: services/usersync/service.md
+    - Ranger TagSync: services/tagsync/service.md
+  - Features:
+    - Governed Data Sharing: gds/gds_intro.md
+    - Security Zones: 
+      - Introduction: sec-zone/intro.md
+      - APIs: sec-zone/apis.md
+  - Blog:
+    - blog/blog.md
+
+extra:
+  homepage: https://ranger.apache.org
+  version:
+    provider: mike
+    default: stable
+    alias: true
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
