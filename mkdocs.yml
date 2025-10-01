@@ -1,4 +1,5 @@
 site_name: Apache Ranger
+site_url: https://kumaab.github.io/ranger-mkdocs/
 
 theme:
   name: material
