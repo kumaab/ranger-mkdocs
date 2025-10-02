@@ -24,6 +24,7 @@ nav:
   - Home: home/overview.md
   - Getting started:
     - Installation: getting-started/install.md
+    - Trino with Ranger: getting-started/trino-with-ranger.md
   - Architecture:
     - Overview: arch/architecture.md
   - Plugins:
@@ -34,10 +35,30 @@ nav:
     - Ranger UserSync: services/usersync/service.md
     - Ranger TagSync: services/tagsync/service.md
   - Features:
-    - Governed Data Sharing: gds/gds_intro.md
+    - Governed Data Sharing: features/gds/gds_intro.md
     - Security Zones: 
-      - Introduction: sec-zone/intro.md
-      - APIs: sec-zone/apis.md
+      - Introduction: features/sec-zone/intro.md
+      - APIs: features/sec-zone/apis.md
+    - Client Libraries:
+        - Introduction: features/client-interface/intro.md
+  - Project:
+    - Contributing: project/contributing.md
+    - Release Process: project/release-process.md
+    - ASF:
+        - Sponsorship: https://www.apache.org/foundation/sponsorship.html
+        - Events: https://www.apache.org/events/current-event.html
+        - Privacy: https://privacy.apache.org/policies/privacy-policy-public.html
+        - License: https://www.apache.org/licenses/
+        - Security: https://www.apache.org/security/
+        - Sponsors: https://www.apache.org/foundation/sponsors.html
+    - Security:
+        - Vulnerabilities Found: project/cve-list.md
+  - Releases:
+      - Releases: release-notes/index.md
+      - 2.8.0: release-notes/2.8.0.md
+      - 2.7.0: release-notes/2.7.0.md
+      - 2.6.0: release-notes/2.6.0.md
+      - 2.5.0: release-notes/2.5.0.md
   - Blog:
     - blog/blog.md
 
@@ -51,6 +72,9 @@ extra:
 markdown_extensions:
   - attr_list
   - admonition
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tabbed:

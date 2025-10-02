@@ -1,29 +1,19 @@
 # Installation
-
+[Docker Docs]: https://docs.docker.com/get-started/overview/
 
 ---
 
 !!! tip
 
-    If you don't have prior experience with Python, we recommend reading
-    [Using Python's pip to Manage Your Projects' Dependencies], which is a
-    really good introduction on the mechanics of Python package management and
-    helps you troubleshoot if you run into errors.
+    If you don't have prior experience with Docker, we recommend reading
+    [Docker Docs], which provides extensive documentation around how to get started with Docker.
 
-  [Python package]: https://pypi.org/project/mkdocs-material/
-  [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
-  [semantic versioning]: https://semver.org/
-  [upgrade to the next major version]: upgrade.md
-  [Markdown]: https://python-markdown.github.io/
-  [Pygments]: https://pygments.org/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [Using Python's pip to Manage Your Projects' Dependencies]: https://realpython.com/what-is-pip/
 
-### with docker <small>recommended</small> { #with-docker data-toc-label="with docker" }
+### docker <small>recommended</small> { #docker data-toc-label="docker" }
 
 The official [Docker image] is a great way to get up and running in a few
 minutes, as it comes with all dependencies pre-installed. Open up a terminal
-and pull the image with:
+and pull the image using:
 
 === "Latest"
 
@@ -45,9 +35,13 @@ and pull the image with:
 
 ???+ warning
 
-    The Docker container is intended for local previewing purposes only and
-    is not suitable for deployment. This is because the web server used by
-    MkDocs for live previews is not designed for production use and may have
-    security vulnerabilities.
-
+    The Docker container is intended for development purposes only and
+    is not suitable for production based deployment.
     [Docker Image]: https://hub.docker.com/r/apache/ranger
+
+
+### docker compose <small> for services </small> { #docker-compose data-toc-label="docker-compose" }
+To bring up different data processing services (with Ranger plugin installed), `docker compose` is recommended.
+
+Follow instructions here to get started: [Ranger Services with Docker Compose](https://github.com/apache/ranger/blob/master/dev-support/ranger-docker/README.md)
+
