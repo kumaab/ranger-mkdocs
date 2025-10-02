@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://kumaab.github.io/ranger-mkdocs/sec-zone/apis/">
+        <link rel="canonical" href="https://kumaab.github.io/ranger-mkdocs/features/gds/gds_intro/">
       
       
-        <link rel="prev" href="../intro/">
+        <link rel="prev" href="../../../services/tagsync/service/">
       
       
-        <link rel="next" href="../../blog/blog/">
+        <link rel="next" href="../../sec-zone/intro/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
-        <title>APIs - Apache Ranger</title>
+        <title>Governed Data Sharing - Apache Ranger</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2a3383ac.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#apis" class="md-skip">
+        <a href="#governed-data-sharing" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://ranger.apache.org" title="Apache Ranger" class="md-header__button md-logo" aria-label="Apache Ranger" data-md-component="logo">
       
-  <img src="../../assets/asf-logo.png" alt="logo">
+  <img src="../../../assets/asf-logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              APIs
+              Governed Data Sharing
             
           </span>
         </div>
@@ -210,7 +210,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../home/overview/" class="md-tabs__link">
+      <a href="../../../home/overview/" class="md-tabs__link">
         
   
   
@@ -231,7 +231,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../getting-started/install/" class="md-tabs__link">
+        <a href="../../../getting-started/install/" class="md-tabs__link">
           
   
   
@@ -251,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../arch/architecture/" class="md-tabs__link">
+        <a href="../../../arch/architecture/" class="md-tabs__link">
           
   
   
@@ -271,7 +271,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../plugins/trino/" class="md-tabs__link">
+        <a href="../../../plugins/trino/" class="md-tabs__link">
           
   
   
@@ -291,7 +291,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../services/admin/service/" class="md-tabs__link">
+        <a href="../../../services/admin/service/" class="md-tabs__link">
           
   
   
@@ -313,7 +313,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../gds/gds_intro/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -333,7 +333,47 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../blog/blog/" class="md-tabs__link">
+        <a href="../../../project/contributing/" class="md-tabs__link">
+          
+  
+  
+  Project
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../release-notes/" class="md-tabs__link">
+          
+  
+  
+  Releases
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/blog/" class="md-tabs__link">
           
   
   
@@ -369,7 +409,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://ranger.apache.org" title="Apache Ranger" class="md-nav__button md-logo" aria-label="Apache Ranger" data-md-component="logo">
       
-  <img src="../../assets/asf-logo.png" alt="logo">
+  <img src="../../../assets/asf-logo.png" alt="logo">
 
     </a>
     Apache Ranger
@@ -384,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../home/overview/" class="md-nav__link">
+      <a href="../../../home/overview/" class="md-nav__link">
         
   
   
@@ -447,12 +487,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../../getting-started/install/" class="md-nav__link">
+      <a href="../../../getting-started/install/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/trino-with-ranger/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trino with Ranger
     
   </span>
   
@@ -518,7 +581,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../arch/architecture/" class="md-nav__link">
+      <a href="../../../arch/architecture/" class="md-nav__link">
         
   
   
@@ -589,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../plugins/trino/" class="md-nav__link">
+      <a href="../../../plugins/trino/" class="md-nav__link">
         
   
   
@@ -660,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../services/admin/service/" class="md-nav__link">
+      <a href="../../../services/admin/service/" class="md-nav__link">
         
   
   
@@ -683,7 +746,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../services/kms/service/" class="md-nav__link">
+      <a href="../../../services/kms/service/" class="md-nav__link">
         
   
   
@@ -706,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../services/usersync/service/" class="md-nav__link">
+      <a href="../../../services/usersync/service/" class="md-nav__link">
         
   
   
@@ -729,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../services/tagsync/service/" class="md-nav__link">
+      <a href="../../../services/tagsync/service/" class="md-nav__link">
         
   
   
@@ -802,95 +865,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../../gds/gds_intro/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Governed Data Sharing
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Security Zones
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6_2">
-            <span class="md-nav__icon md-icon"></span>
-            Security Zones
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../intro/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Introduction
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -908,7 +882,7 @@
   
   
   <span class="md-ellipsis">
-    APIs
+    Governed Data Sharing
     
   </span>
   
@@ -921,7 +895,7 @@
   
   
   <span class="md-ellipsis">
-    APIs
+    Governed Data Sharing
     
   </span>
   
@@ -944,27 +918,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zone-management" class="md-nav__link">
+  <a href="#what-is-a-datashare" class="md-nav__link">
     <span class="md-ellipsis">
-      Zone Management
+      What is a DataShare?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#policy-management" class="md-nav__link">
+  <a href="#what-is-a-dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      Policy Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#audits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Audits
+      What is a DataSet?
     </span>
   </a>
   
@@ -974,6 +939,165 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Security Zones
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Security Zones
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sec-zone/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sec-zone/apis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    APIs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Client Libraries
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Client Libraries
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../client-interface/intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1020,7 +1144,7 @@
   
   
   <span class="md-ellipsis">
-    Blog
+    Project
     
   </span>
   
@@ -1030,6 +1154,522 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Project
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/release-process/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release Process
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    ASF
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            ASF
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.apache.org/foundation/sponsorship.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.apache.org/events/current-event.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Events
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://privacy.apache.org/policies/privacy-policy-public.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Privacy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.apache.org/licenses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.apache.org/security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.apache.org/foundation/sponsors.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sponsors
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Security
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../project/cve-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerabilities Found
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Releases
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Releases
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Releases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/2.8.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.8.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/2.7.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.7.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/2.6.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.6.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../release-notes/2.5.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2.5.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Blog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             Blog
           </label>
@@ -1042,7 +1682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../blog/blog/" class="md-nav__link">
+      <a href="../../../blog/blog/" class="md-nav__link">
         
   
   
@@ -1092,27 +1732,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#zone-management" class="md-nav__link">
+  <a href="#what-is-a-datashare" class="md-nav__link">
     <span class="md-ellipsis">
-      Zone Management
+      What is a DataShare?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#policy-management" class="md-nav__link">
+  <a href="#what-is-a-dataset" class="md-nav__link">
     <span class="md-ellipsis">
-      Policy Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#audits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Audits
+      What is a DataSet?
     </span>
   </a>
   
@@ -1134,10 +1765,9 @@
 
 
 
-<h1 id="apis">APIs<a class="headerlink" href="#apis" title="Permanent link">&para;</a></h1>
-<h2 id="zone-management">Zone Management<a class="headerlink" href="#zone-management" title="Permanent link">&para;</a></h2>
-<h2 id="policy-management">Policy Management<a class="headerlink" href="#policy-management" title="Permanent link">&para;</a></h2>
-<h2 id="audits">Audits<a class="headerlink" href="#audits" title="Permanent link">&para;</a></h2>
+<h1 id="governed-data-sharing">Governed Data Sharing<a class="headerlink" href="#governed-data-sharing" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-a-datashare">What is a DataShare?<a class="headerlink" href="#what-is-a-datashare" title="Permanent link">&para;</a></h2>
+<h2 id="what-is-a-dataset">What is a DataSet?<a class="headerlink" href="#what-is-a-dataset" title="Permanent link">&para;</a></h2>
 
 
 
@@ -1186,10 +1816,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "stable", "provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"alias": true, "default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
