@@ -1,14 +1,11 @@
-# Installation
-[Docker Docs]: https://docs.docker.com/get-started/overview/
-
 ---
-
+title: Getting started with Ranger
+---
+[Docker Docs]: https://docs.docker.com/get-started/overview/
+# Installation
 !!! tip
-
-    If you don't have prior experience with Docker, we recommend reading
+    If you don't have prior experience with Docker 🐳, we recommend reading
     [Docker Docs], which provides extensive documentation around how to get started with Docker.
-
-
 ### docker <small>recommended</small> { #docker data-toc-label="docker" }
 
 The official [Docker image] is a great way to get up and running in a few

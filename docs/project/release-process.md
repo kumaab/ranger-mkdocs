@@ -26,8 +26,8 @@ This page walks you through the release process of the Ranger project. [Here](ht
 
 Decisions about releases are made by three groups:
 
-* Release Manager: Does the work of creating the release, signing it, counting votes, announcing the release and so on. Requires the assistance of a committer for some steps.
-* The community: Performs the discussion of whether it is the right time to create a release and what that release should contain. The community can also cast non-binding votes on the release.
+* Release Manager: Does the work of creating the release, signing it, counting votes, announcing the release and so on.
+* The Community: Performs the discussion of whether it is the right time to create a release and what that release should contain. The community can also cast non-binding votes on the release.
 * PMC: Gives binding votes on the release.
 
 This page describes the procedures that the release manager and voting PMC members take during the release process.
@@ -50,8 +50,8 @@ gpg --list-keys ${CODESIGNINGKEY}
 gpg --keyserver hkp://keyserver.ubuntu.com --send-key ${CODESIGNINGKEY}
 ```
 
-### Publish your key
-The key is supposed to be published together with the release. Please append it to the end of [keys] file.
+#### Publish your key
+The key is supposed to be published together with the release. If it doesn't exist already, append it to the end of [keys] file.
 
 ```bash title="Publish Key (PMC)"
 svn co https://dist.apache.org/repos/dist/release/ranger
@@ -62,7 +62,9 @@ gpg --armor --export $CODESIGNINGKEY >> KEYS
 svn commit -m "Adding key of XXXX to the KEYS" 
 ```
 
-In case you are a committer and not a PMC member, you can add your key to the dev `KEYS` file and a PMC member can move it to the final destination.
+!!! note
+    
+    In case you are a Committer and not a PMC member, you can add your key to the dev `KEYS` file and a PMC member can move it to the final destination.
 
 ```bash title="Publish Key (Committer)"
 svn co https://dist.apache.org/repos/dist/dev/ranger
@@ -215,7 +217,7 @@ to `dev@ranger.apache.org` and `private@ranger.apache.org`
 ```
 [RESULT] [VOTE] Apache Ranger ${RANGER_VERSION} ${RANGER_RC}
 ```
-to `dev@ranger.apache.org` and `private@ranger.apache.org`. Include names of all PMC members, followed by committers/contributors who cast their votes. Here is a reference link: [https://lists.apache.org/thread/sonr9mmjv8ot9kzwh66royv0pblnn41c](https://lists.apache.org/thread/sonr9mmjv8ot9kzwh66royv0pblnn41c)
+to `dev@ranger.apache.org` and `private@ranger.apache.org`. Include names of all PMC members, followed by committers/contributors who cast their votes. Here is a reference [link](https://lists.apache.org/thread/sonr9mmjv8ot9kzwh66royv0pblnn41c).
 
 ## Post-Vote
 
@@ -239,7 +241,7 @@ svn add ${RANGER_VERSION}
  
 svn commit -m "Uploading Apache Ranger ${RANGER_VERSION} release src artifacts" ${RANGER_VERSION}
 ```
-Now the .tar.gz artifact should have an associated .asc file, .sha512 and .sha256 file at the destination, so a total of 4 files.
+Now the `.tar.gz` artifact should have an associated `.asc` file, `.sha512` and `.sha256` file at the destination, so a total of 4 files.
 
 ### Publish the source artifacts to Maven Central
 1. Setup `~/.m2/settings-security.xml` as per the [guidelines](https://maven.apache.org/guides/mini/guide-encryption.html).
@@ -382,7 +384,7 @@ git push origin
 Now, update the previous release branch with newer SNAPSHOT version and commit it, something like this:
 
 ```bash title="Update to SNAPSHOT version and Push"
-NEXT_RANGER_VERSION=2.6.1-SNAPSHOT
+NEXT_RANGER_VERSION="2.6.1-SNAPSHOT"
 mvn versions:set -DnewVersion=${NEXT_RANGER_VERSION}
  
 git commit -am "RANGER-XXXX: Updated version from ${RANGER_VERSION} to ${NEXT_RANGER_VERSION}"
@@ -403,7 +405,7 @@ git push origin
     Only PMC members can do this step.
 
 - If the release resolved any CVE 
-    - please update `https://cwiki.apache.org/confluence/display/RANGER/Vulnerabilities+found+in+Ranger`
+    - update [Vulnerabilities Found](./cve-list.md)
     - send notification to 
         - `security@apache.org`
         - `oss-security@lists.openwall.com`

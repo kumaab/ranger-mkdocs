@@ -43,6 +43,10 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install mkdocs-material
+          pip install mkdocs-material-extensions
+          pip install mkdocs-static-i18n
+          pip install mkdocs-table-reader-plugin
+          pip install "mkdocs-material[imaging]"
 
       - name: Build (fail on warnings)
         run: mkdocs build --strict

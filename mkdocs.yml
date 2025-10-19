@@ -1,27 +1,59 @@
+
+# Project info
 site_name: Apache Ranger
 site_url: https://kumaab.github.io/ranger-mkdocs/
 
+# Repository
+repo_name: 'apache/ranger'
+repo_url: 'https://github.com/apache/ranger'
+edit_uri: 'https://github.com/apache/ranger/blob/master/'
+
+copyright: Copyright &copy; 2014-2025 The Apache Software Foundation
+
 theme:
   name: material
-  logo: assets/asf-logo.png
+  custom_dir: docs/overrides
+  logo: assets/brand/merged-logo.svg
+  favicon: assets/brand/asf-logo.png
+  icon:
+    repo: fontawesome/brands/github
   palette:
     - scheme: default
-      primary: violet
-      accent: violet
+      accent: deep purple
       toggle:
-        icon: material/brightness-7  # ☀️
+        icon: material/brightness-5  # ☀️
         name: Switch to dark mode
     - scheme: slate
-      primary: purple
-      accent: purple
+      accent: amber
       toggle:
-        icon: material/brightness-4  # 🌙
+        icon: material/brightness-2  # 🌙
         name: Switch to light mode
+  font: # comment it out and see subtle difference
+    text: Noto Sans
+    code: Roboto Mono
   features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.top
+    - navigation.tracking
     - navigation.tabs
+    - navigation.path
+    - navigation.indexes
+    - navigation.prune
+    - content.code.copy
+    - toc.follow
+    - announce.dismiss
+
+plugins:
+  - search
+  - table-reader
+  - social:
+      cards_layout_options:
+        background_color: "#151819"
+        color: "#5FFFD7"
 
 nav:
-  - Home: home/overview.md
+  - Home: index.md
   - Getting started:
     - Installation: getting-started/install.md
     - Trino with Ranger: getting-started/trino-with-ranger.md
@@ -43,6 +75,7 @@ nav:
         - Introduction: features/client-interface/intro.md
   - Project:
     - Contributing: project/contributing.md
+    - Code Style Guide: project/java-code-style.md
     - Release Process: project/release-process.md
     - ASF:
         - Sponsorship: https://www.apache.org/foundation/sponsorship.html
@@ -64,21 +97,52 @@ nav:
 
 extra:
   homepage: https://ranger.apache.org
-  version:
-    provider: mike
-    default: stable
-    alias: true
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://the-asf.slack.com/archives/C4SC5NXAA
+    - icon: fontawesome/solid/envelope
+      link: mailto:dev@ranger.apache.org
+    - icon: fontawesome/brands/github
+      link: https://github.com/apache/ranger
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/apache/ranger
+#  version: # causes WARNING in console so commented out for now
+#    provider: mike
+#    default: stable
+#    alias: true
+
+extra_css:
+  - assets/css/custom.css
+  - assets/css/table.css
+#  - assets/css/search-bar.css
+
+extra_javascript:
+  - assets/js/typewriter.js
+  - https://unpkg.com/typewriter-effect@latest/dist/core.js
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6
 
 markdown_extensions:
   - attr_list
   - admonition
+  - def_list
+  - footnotes
+  - md_in_html
   - codehilite
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - simple
+
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - toc:
       permalink: true
-
+  - tables
