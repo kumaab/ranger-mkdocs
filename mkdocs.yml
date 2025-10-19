@@ -14,7 +14,7 @@ theme:
   name: material
   custom_dir: docs/overrides
   logo: assets/brand/merged-logo.svg
-  favicon: assets/brand/asf-logo.png
+  favicon: assets/brand/favicon.ico
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -47,6 +47,10 @@ theme:
 plugins:
   - search
   - table-reader
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      type: date
+      timezone: America/Los_Angeles
   - social:
       cards_layout_options:
         background_color: "#151819"
